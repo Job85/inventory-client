@@ -4,8 +4,7 @@ import Nav from '../navigation/Nav';
 export default function Header() {
 
     return (
-        <div>
-            <h1 className={styles.header1}>Header</h1>
+        <div className={styles.header}>
             <Nav />
         </div>
     )
