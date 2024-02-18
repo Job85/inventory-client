@@ -1,0 +1,33 @@
+'use client'
+
+import styles from './styles.module.css';
+import React from 'react';
+import { usePathname } from 'next/navigation';
+import Link from 'next/link';
+
+export default function Nav() {
+    const pathname = usePathname();
+
+    const links = [
+        { href: "/register", label: "Register" },
+        { href: "/items", label: "Items" },
+        { href: "/create_item", label: "Add Item" },
+    ]
+    return (
+        <nav className={styles.container}>
+            <ul className={styles.nav_links}>
+                {links.map((link, index) => (
+                    <li key={index}>
+                        <Link
+                            href={link.href}
+                            passHref
+                            className={`${styles.nav_link} ${pathname === link.href ? styles.active_link : ''}`}
+                        >
+                            {link.label}
+                        </Link>
+                    </li>
+                ))}
+            </ul>
+        </nav>
+    )
+}
