@@ -13,7 +13,7 @@ export default function Nav() {
         { href: "/register", label: "Register" },
         { href: "/login", label: "Login" },
         { href: "/items", label: "Items" },
-        { href: "/create_item", label: "Add Item" },
+        { href: "/create_item", label: "Create Item" },
     ]
     return (
         <nav className={styles.container}>
