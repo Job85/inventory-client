@@ -9,7 +9,6 @@ export default function Create_Item() {
                 Create an Item
             </h1>
             <Card
-                className={styles.create_item}
                 title="Item Form"
                 fields={[
                     { type: "text", name: "location", name2: "Location", placeholder: "Location" },
