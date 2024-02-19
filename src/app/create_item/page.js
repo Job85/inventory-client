@@ -20,6 +20,9 @@ export default function Create_Item() {
                     { type: "text", name: "vendor_name", name2: "Vendor Name", placeholder: "Vendor Name" },
                     { type: "text", name: "vendor_code", name2: "Vendor Code", placeholder: "Vendor Code" }
                 ]}
+                button_fields={[
+                    { type: "submit", name: "new_item", ariaLabel: "submit_button", children: "Submit" }
+                ]}
             />
 
         </div>
