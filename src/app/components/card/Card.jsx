@@ -2,7 +2,7 @@ import styles from './styles.module.css';
 import LabelInput from '../input/LabelInputField';
 import Button from '../button/Button';
 
-export default function Card({ title, fields }) {
+export default function Card({ title, fields, button_fields }) {
 
     return (
         <div className={styles.container}>
@@ -17,12 +17,14 @@ export default function Card({ title, fields }) {
                         placeholder={field.placeholder}
                     />
                 ))}
-                <Button
-                    type="submit"
-                    ariaLabel="submit-form"
-                    children="Submit"
-                    className={styles.submit_button}
-                />
+                {button_fields.map(button_field => (
+                    <Button
+                        key={button_field.name}
+                        type={button_field.type}
+                        ariaLabel={button_field.ariaLabel}
+                        children={button_field.children}
+                    />
+                ))}
             </form>
         </div>
     )
