@@ -2,9 +2,11 @@ import styles from './styles.module.css';
 
 export default function Button({ onClick, className, disabled, type, children, style, ariaLabel }) {
 
+    const buttonClasses = `${styles.button} ${className || ''}`;
+
     return (
         <button
-            className={`${styles.button} ${className}`}
+            className={buttonClasses.trim()}
             onClick={onClick}
             disabled={disabled}
             type={type}
