@@ -11,6 +11,7 @@ export default function Card({ title, fields }) {
                     key={field.name}
                     type={field.type}
                     name={field.name}
+                    name2={field.name2}
                     placeholder={field.placeholder}
                 />
             ))}
