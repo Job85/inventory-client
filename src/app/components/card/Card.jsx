@@ -17,6 +17,12 @@ export default function Card({ title, fields }) {
                         placeholder={field.placeholder}
                     />
                 ))}
+                <Button
+                    type="submit"
+                    ariaLabel="submit-form"
+                    children="Submit"
+                    className={styles.submit_button}
+                />
             </form>
         </div>
     )
