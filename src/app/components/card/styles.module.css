@@ -1,9 +1,12 @@
 .container {
-    display: flex;
-    flex-direction: column;
     border: 0.15rem solid yellowgreen;
 }
 
 .h3 {
     color: yellowgreen;
+}
+
+.item_form {
+    display: flex;
+    flex-direction: column;
 }
