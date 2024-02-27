@@ -1,6 +1,6 @@
 import styles from "./home.module.css";
 
-export default function Home() {
+export default function UserHome() {
 
     return (
         <div>
