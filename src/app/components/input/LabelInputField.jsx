@@ -4,8 +4,11 @@ export default function LabelInput({ type, name, name2, placeholder, defaultValu
 
     return (
         <>
-            <label htmlFor={name}>{name2}</label>
+            <label
+                className={styles.label}
+                htmlFor={name}>{name2}</label>
             <input
+                className={styles.input}
                 type={type}
                 name={name}
                 placeholder={placeholder}

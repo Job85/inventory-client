@@ -1,0 +1,11 @@
+.label {
+    padding: .25rem;
+}
+
+.input {
+    margin: .25rem;
+    padding: .15rem;
+    font-size: large;
+    box-shadow: 1px 3px 2px 1px rgba(255, 255, 255, 0.8);
+    border: .05rem solid yellowgreen;
+}
