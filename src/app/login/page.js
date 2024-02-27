@@ -4,7 +4,7 @@ import Card from '../components/card/Card';
 export default function Login() {
 
     return (
-        <>
+        <div className={styles.card_container}>
             <Card
                 title="Login"
                 fields={[
@@ -15,6 +15,6 @@ export default function Login() {
                     { type: "submit", name: "login", ariaLabel: "submit_login", children: "Login" }
                 ]}
             />
-        </>
+        </div>
     )
 }
