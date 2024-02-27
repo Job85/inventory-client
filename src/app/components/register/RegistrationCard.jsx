@@ -1,5 +1,4 @@
-// import styles from './register.module.css';
-import styles from '../page.module.css';
+import styles from '../../globals.css';
 import Card from '../card/Card';
 
 export default function Register() {

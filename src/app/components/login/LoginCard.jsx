@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Card from '../card/Card';
-import styles from '../page.module.css';
+import styles from '../../globals.css';
 
 export default function Login({ onLogin }) {
     const [formValues, setFormValues] = useState({
