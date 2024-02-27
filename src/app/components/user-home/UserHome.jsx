@@ -1,4 +1,4 @@
-import styles from "./home.module.css";
+import styles from "./UserHome.module.css";
 
 export default function UserHome() {
 
