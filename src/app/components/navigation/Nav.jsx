@@ -9,7 +9,7 @@ export default function Nav() {
     const pathname = usePathname();
 
     const links = [
-        { href: "/home", label: "Home" },
+        { href: "/landing", label: "Home" },
         { href: "/register", label: "Register" },
         { href: "/login", label: "Login" },
         { href: "/items", label: "Items" },
